@@ -1,0 +1,38 @@
+$white:hsl(0, 0%, 100%);
+$light-blue:hsl(199, 53.5%, 61.2%);
+//very light visible color on background
+$aqua-spring:hsl(203, 57%, 97%);
+// heading-color in feature,portfolio and counter section
+$pickled-bluewood:hsl(198, 31.4%, 26.9%);
+$plantation:hsl(197, 32%, 22%);
+
+//Website colors
+$light-text-color:$white;
+$section-background-color:$light-blue;
+$heading-color:$pickled-bluewood;
+$hover-color:hsl(221, 38%, 20%);
+//testimonial and contact section background-color
+$background-color:$aqua-spring;
+$nav-link-background:hsl(224, 42%, 10%);
+// counter section paragraph color
+$bali-hai:	hsl(198, 23%, 61%);
+$jelly-bean:hsl(197, 31%, 42%);
+
+// filter list
+$alice-blue:hsl(198, 52%, 95%);
+// filter list link
+$inactive-link-color:hsl(0, 0%, 50%);
+$hover-filet-color:hsl(199, 54%, 61%);
+
+//Typography
+$body-fonts: Montserrat,
+sans-serif;
+$bold-fonts:Montserrat-Bold,
+sans-serif;
+$line-height:1.5;
+$headers:(1, 2, 3, 4, 5, 6);
+
+//Box shadow
+$shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$contact-section-boxshadow:0px 3px 15px rgba(0, 0, 0, 0.2);

@@ -1,0 +1,130 @@
+.contact {
+  background-color: $background-color;
+  margin-top: 3em;
+  padding-bottom: 5%;
+  box-sizing: border-box;
+}
+
+.team-content {
+  @extend %section-effect;
+}
+
+.contact-section {
+  padding: 1% 8%;
+  background-color: $background-color;
+  i {
+    color: $section-background-color;
+    margin-bottom: 3%;
+  }
+}
+.address-box,
+.email-box,
+.call-box {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.email-box {
+  left: 2%;
+  background-color: $light-text-color;
+  white-space: nowrap;
+  box-shadow: $contact-section-boxshadow;
+}
+// use mixins here
+.call-box {
+  left: 4%;
+  background-color: $light-text-color;
+  white-space: nowrap;
+  box-shadow: $contact-section-boxshadow;
+  @extend %contact-paragraph;
+}
+
+.contact--section {
+  background-color: $background-color;
+  padding: 1% 6% 1% 6%;
+  .maps {
+    padding: 0 0 0 2.2% !important;
+  }
+}
+
+.forms-section {
+  background-color: $light-text-color;
+  padding: 3%;
+  text-align: center;
+  left: 1.8%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+input:focus {
+  border-color: blue;
+}
+
+.btn {
+  margin-top: 1%;
+}
+
+input {
+  height: 10vh;
+}
+.form-control {
+  width: 100%;
+  padding: 3%;
+}
+.form-groups {
+  margin-bottom: 4%;
+  padding: 0;
+}
+.form-group {
+  margin-bottom: 4%;
+}
+.form-controls {
+  padding: 3% 5%;
+}
+.forms-section .row {
+  padding: 0;
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+  .address-box {
+    margin-bottom: 1em;
+  }
+  .email-box {
+    left: 0;
+  }
+  .call-box {
+    left: 0.3%;
+  }
+}
+@media (max-width: 992px) {
+  .hey {
+    padding-left: 0;
+    width: 98%;
+  }
+  .forms-section .row {
+    padding: 0;
+  }
+  .forms-section {
+    max-width: 96.2%;
+  }
+}
+@media (max-width: 768px) {
+  .address-box,
+  .email-box,
+  .call-box {
+    left: 0;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    margin-top: 0;
+  }
+}

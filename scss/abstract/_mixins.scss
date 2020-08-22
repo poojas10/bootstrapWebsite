@@ -1,0 +1,22 @@
+
+@mixin  team-discription() {
+    @extend %team-value;
+   
+      
+   &:hover .hide{
+    position: relative;
+    z-index: 1;
+   visibility: visible;
+
+ 
+  
+
+//     color: $section-background-color;
+
+
+ }
+//  &:hover .members__name{
+// max-height: 200px;
+//  }
+}
+

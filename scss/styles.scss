@@ -1,0 +1,38 @@
+
+@import "abstract/variables";
+@import "abstract/placeholders";
+@import "abstract/mixins";
+@import "headingSection";
+@import "features";
+@import "counterSection";
+@import "ctaSection";
+@import "portfolioSection";
+@import "testimonials";
+@import "_teams";
+@import "contact";
+@import "footerSection";
+@import "nextPage";
+
+
+body {
+    font-family: $body-fonts;
+    overflow-x: hidden; //horizontal
+    width: 100vw !important; 
+    height: 100vh !important; 
+    z-index: 1; 
+    max-width: 100%; 
+    // padding: 2% 5%;
+    
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+// loop for heading font
+@each $var in $headers {
+    h-#{var} {
+        font-family: $bold-fonts;
+    }
+}

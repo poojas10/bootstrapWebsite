@@ -1,0 +1,113 @@
+.footer {
+  background-color: $plantation;
+  padding: 0 4%;
+}
+
+.about-company {
+  text-align: center;
+  background-color: $light-text-color;
+  height: fit-content;
+  z-index: 1;
+  width: fit-content;
+  position: relative;
+  bottom: 2em;
+  padding: 3% 3%;
+  border-top-style: solid;
+  border-width: 5px;
+  border-top-color: $section-background-color;
+}
+
+.company__address {
+  margin-bottom: 2%;
+
+  p {
+    margin: 0;
+    padding: 4px;
+  }
+}
+
+.lists,
+.lists1,
+.subscribe-field {
+  @extend %list-heading;
+  @extend %footer-list;
+  width: fit-content;
+  padding: 3% 0;
+}
+.lists,
+.lists1 {
+  padding-left: 1em;
+}
+
+.subscribe__box {
+  &:focus-within {
+    border: black;
+  }
+}
+
+.subscribe__box {
+  display: inline-block;
+  padding: 1.3% 2.5%;
+  background-color: $light-text-color;
+}
+
+.subscribe,
+.list__headings {
+  color: #fff;
+}
+
+.footer-section {
+  background-color: #385b6b;
+  width: 90%;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: $light-text-color;
+}
+.copyright-section {
+  margin: auto;
+}
+
+.credits {
+  padding-top: 10px;
+  color: $light-text-color;
+  text-align: center;
+}
+.input-group {
+  margin: auto;
+}
+
+.mails {
+  height: 100%;
+  max-width: 100%;
+  border: none;
+  text-align: center;
+}
+
+.subscribee {
+  background-color: blueviolet;
+  color: #fff;
+  height: fit-content;
+}
+@media (max-width: 770px) {
+  .footer {
+    margin-top: 6%;
+  }
+  .about-company {
+    width: 80%;
+    margin: auto;
+  }
+  .lists,
+  .lists1 {
+    padding-left: 1.5em;
+  }
+  .subscribe-field {
+    padding: 0 2em;
+  }
+}
+@media (max-width: 500px) {
+  .subscribee {
+    height: 20%;
+  }
+}

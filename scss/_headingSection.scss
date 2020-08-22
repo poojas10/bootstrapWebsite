@@ -1,0 +1,179 @@
+.header {
+  background-image: url("https://wallpapercave.com/wp/pA4nMSi.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  padding: 3% 5%;
+}
+
+.navbar a.active {
+  background-color: $hover-color;
+  color: white;
+}
+
+.navbar-brand,
+.fa-bars {
+  color: $light-text-color;
+}
+
+.nav-link {
+  color: $light-text-color;
+  background-color: $nav-link-background;
+
+  &:hover {
+    background-color: $hover-color;
+    color: $light-text-color;
+  }
+}
+
+.dropdown-item {
+  padding: 2%;
+}
+
+.sub-menu {
+  display: none;
+  padding-left: 3%;
+}
+
+.dropdown-item.active {
+  background-color: $hover-color;
+}
+
+.heading {
+  text-align: center;
+  padding: 4% 5%;
+}
+
+.heading__title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: $line-height;
+  color: $light-text-color;
+}
+
+.heading__discription {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: $line-height;
+  color: $light-text-color;
+}
+
+.heading__arrow-button {
+  padding: 3% 0;
+  margin: auto;
+  max-height: 6%;
+  max-width: 9%;
+  min-width: 9%;
+  border-radius: 100%;
+  border: 1px solid $light-text-color;
+
+  i {
+    color: $light-text-color;
+
+    &:hover {
+      transform: translateY(10px);
+    }
+  }
+}
+
+// Navigation Overlay
+.modal-content {
+  height: 100vh;
+  width: 90vw;
+  padding: 3% 7%;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+.deleteMeetingClose {
+  font-size: 4em;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  height: fit-content;
+  top: 0;
+}
+
+.modal-body {
+  overflow-y: auto;
+  margin-top: 6%;
+
+  .navbar-brand {
+    color: $light-text-color;
+  }
+
+  .nav-link {
+    color: black;
+    padding: 2%;
+    background-color: $light-text-color;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .heading__arrow-button {
+    padding: 2.5% 0;
+    width: 10%;
+    height: 4%;
+  }
+
+  .sub-menu {
+    position: absolute;
+    display: none;
+    right: 100%;
+    min-width: 10em;
+    padding: 1em;
+    top: 20%;
+    background-color: $light-text-color;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+
+  .sub-menu:hover {
+    display: block;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heading__title {
+    font-size: 2rem;
+  }
+  .heading {
+    transform: translateY(60%);
+    margin-top:6em;
+  }
+
+  .heading__discription {
+    font-size: 1rem;
+    margin: 2% 0 4% 0;
+    word-wrap: break-word;
+  }
+}
+
+.scrolled-nav {
+  padding: 1% 3%;
+}

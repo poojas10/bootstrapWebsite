@@ -1,0 +1,89 @@
+.next{
+   padding: 0;
+}
+.slider-section{
+    padding:4% 5% 0 5%;
+}
+.carousel-indicators{
+ position: relative;
+    margin-left: 0;
+   margin-right: 0;
+   top: 100%;
+display: flex;
+justify-content: start;
+}
+
+
+.info{
+    background-color: #fff;
+    padding: 3% 3% 2% 3%;
+    position: absolute;
+    top: 70%;
+    z-index: 16;
+    box-shadow: $shadow;
+    right: 0;
+    min-height: 260px;
+    max-height: 310px;
+}
+.example-demo{
+    padding: 3% 5% ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.example-demo p{
+    padding-top: 2% ;
+  
+}
+.newpage{
+    margin-top: 5%;
+}
+.project-link{
+   white-space: nowrap;
+}
+.carousel-slide{
+    position: relative;
+}
+.demos{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:1100px){
+  
+    .example-demo{
+        margin-top: 6%;
+    }
+}
+@media (max-width:890px){
+    .info{
+     position: relative;
+     margin-top: 6%;
+    }
+   
+    
+    .next{
+        padding: 0 3%;
+        
+    }
+}
+.heading-portfolio{
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.port-nav{
+    background-color: #0f1524;
+}
+@media(max-width:500px){
+    .next{
+        padding: 0;
+    }
+    .heading-portfolio{
+        padding: 3% 2%;
+       white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
